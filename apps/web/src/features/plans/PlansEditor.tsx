@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Alert, Badge, Button, Group, Modal, NumberInput, Table, Text, Textarea, TextInput } from '@mantine/core';
-import type { PlanDto } from '@amp-csr/shared';
+import type { PlanDto } from '@csr-portal/shared';
 import { PageLoader } from '../../components/PageLoader.js';
 import { usePlans } from './usePlans.js';
 import { useCreatePlan } from './useCreatePlan.js';

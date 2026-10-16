@@ -1,4 +1,4 @@
-import type { MobileUserDto, PlanDto, PurchaseDto, SubscriptionDto, VehicleDto } from '@amp-csr/shared'
+import type { MobileUserDto, PlanDto, PurchaseDto, SubscriptionDto, VehicleDto } from '@csr-portal/shared'
 
 export type VehicleRecord = Omit<VehicleDto, 'subscription'> & { mobileUserId: number }
 

@@ -17,7 +17,7 @@ export function PageLoader() {
         <Loader aria-label="Loading" />
         {isSlow && (
           <Text size="sm" c="dimmed" ta="center" role="status">
-            Still loading. For the purposes of this assessment the API is hosted on Render's free tier, which sleeps
+            Still loading. This demo's API is hosted on Render's free tier, which sleeps
             when idle. The first request can take up to a minute while it wakes up, so thanks for your patience.
           </Text>
         )}

@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service.js';
 import { Prisma } from '../generated/prisma/client.js';
 import { PRISMA_ERROR_CODE } from '../common/constants/prisma-error-codes.js';
-import type { CreatePlanDto, PlanDto, UpdatePlanDto } from '@amp-csr/shared';
+import type { CreatePlanDto, PlanDto, UpdatePlanDto } from '@csr-portal/shared';
 import { toPlanDto } from '../common/mappers/plan.mapper.js';
 
 @Injectable()

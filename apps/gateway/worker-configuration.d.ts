@@ -3,7 +3,7 @@
 // Runtime types generated with workerd@1.20260915.1 2026-09-15 
 interface __BaseEnv_Env {
 	ASSETS: Fetcher;
-	API_ORIGIN: "https://amp-csr-api.onrender.com";
+	API_ORIGIN: "https://csr-portal-api.onrender.com";
 	GATEWAY_SECRET: string;
 }
 declare namespace Cloudflare {

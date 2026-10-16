@@ -1,5 +1,5 @@
 import { useQuery, type QueryClient } from '@tanstack/react-query';
-import type { CsrUserDto } from '@amp-csr/shared';
+import type { CsrUserDto } from '@csr-portal/shared';
 import { getCurrentCsr } from '../../api/auth.js';
 
 export const CURRENT_CSR_KEY = ['auth', 'me'] as const;

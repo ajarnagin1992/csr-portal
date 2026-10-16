@@ -11,7 +11,7 @@ import { useCreateSubscription } from '../subscriptions/useCreateSubscription.js
 import { useCancelSubscription } from '../subscriptions/useCancelSubscription.js';
 import { useTransferSubscription } from '../subscriptions/useTransferSubscription.js';
 import { formatDate } from '../../utils/formatDate.js';
-import type { MobileUserDto, VehicleDto } from '@amp-csr/shared';
+import type { MobileUserDto, VehicleDto } from '@csr-portal/shared';
 
 const ACTIVE_SUBSCRIPTION_STATUSES = new Set(['ACTIVE', 'OVERDUE']);
 

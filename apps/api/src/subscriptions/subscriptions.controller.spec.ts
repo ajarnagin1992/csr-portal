@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { SubscriptionsController } from './subscriptions.controller.js';
 import { SubscriptionsService } from './subscriptions.service.js';
-import type { SubscriptionDto } from '@amp-csr/shared';
+import type { SubscriptionDto } from '@csr-portal/shared';
 import { subscriptionDto } from '../test/fixtures.js';
 
 describe('SubscriptionsController', () => {

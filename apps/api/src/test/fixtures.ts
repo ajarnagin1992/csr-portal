@@ -6,7 +6,7 @@ import type {
   SubscriptionDto,
   UserDetailDto,
   VehicleDto,
-} from '@amp-csr/shared';
+} from '@csr-portal/shared';
 import type { CsrUser, MobileUser, Plan, Vehicle } from '../generated/prisma/client.js';
 import type { MobileUserWithDetail } from '../common/mappers/mobile-user.mapper.js';
 import type { PurchaseWithVehicle } from '../common/mappers/purchase.mapper.js';

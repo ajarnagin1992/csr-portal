@@ -3,7 +3,7 @@ import { PrismaService } from '../prisma/prisma.service.js';
 import { Prisma } from '../generated/prisma/client.js';
 import { PRISMA_ERROR_CODE } from '../common/constants/prisma-error-codes.js';
 import { TERMINAL_STATUSES_SUBSCRIPTION } from '../common/constants/terminal-statuses.js';
-import type { ListUsersResponseDto, MobileUserDto, UpdateUserDto, UserDetailDto } from '@amp-csr/shared';
+import type { ListUsersResponseDto, MobileUserDto, UpdateUserDto, UserDetailDto } from '@csr-portal/shared';
 import { toMobileUserDto, toUserDetailDto } from '../common/mappers/mobile-user.mapper.js';
 
 @Injectable()

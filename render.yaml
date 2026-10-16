@@ -14,7 +14,7 @@
 # running app.
 services:
   - type: web
-    name: amp-csr-api
+    name: csr-portal-api
     runtime: node
     plan: free
     branch: master
@@ -29,8 +29,8 @@ services:
     # hand, not on every deploy.
     buildCommand: >-
       npm ci &&
-      npm run build -w @amp-csr/shared &&
-      npm run build -w @amp-csr/api &&
+      npm run build -w @csr-portal/shared &&
+      npm run build -w @csr-portal/api &&
       (cd apps/api && npx prisma migrate deploy)
 
     startCommand: node apps/api/dist/main.js

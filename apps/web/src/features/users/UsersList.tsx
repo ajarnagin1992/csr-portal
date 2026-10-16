@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Alert, Pagination, Table, Text, TextInput } from '@mantine/core';
-import { DEFAULT_PAGE_SIZE } from '@amp-csr/shared';
+import { DEFAULT_PAGE_SIZE } from '@csr-portal/shared';
 import { PageLoader } from '../../components/PageLoader.js';
 import { useUsers } from './useUsers.js';
 

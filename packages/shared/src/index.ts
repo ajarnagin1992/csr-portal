@@ -1,4 +1,4 @@
-export const APP_NAME = "AMP CSR Portal";
+export const APP_NAME = "CSR Portal";
 export * from "./schemas/mobile-user.schema.js";
 export * from "./schemas/plan.schema.js";
 export * from "./schemas/subscription.schema.js";

@@ -4,7 +4,7 @@ import { UsersService } from './users.service.js';
 import { PrismaService } from '../prisma/prisma.service.js';
 import { Prisma, type MobileUser } from '../generated/prisma/client.js';
 import { TERMINAL_STATUSES_SUBSCRIPTION } from '../common/constants/terminal-statuses.js';
-import type { UpdateUserDto } from '@amp-csr/shared';
+import type { UpdateUserDto } from '@csr-portal/shared';
 import type { PurchaseWithVehicle } from '../common/mappers/purchase.mapper.js';
 import {
   purchaseDto,

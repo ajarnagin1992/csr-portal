@@ -1,5 +1,5 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
-import type { CsrUserDto } from '@amp-csr/shared';
+import type { CsrUserDto } from '@csr-portal/shared';
 import type { AuthenticatedRequest } from './session-cookie.js';
 
 /** The CSR resolved by `SessionGuard`. Not available on `@AllowAnonymous()` routes. */

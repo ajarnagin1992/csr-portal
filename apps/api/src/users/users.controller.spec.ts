@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UsersController } from './users.controller.js';
 import { UsersService } from './users.service.js';
-import type { ListUsersResponseDto, MobileUserDto, UpdateUserDto, UserDetailDto } from '@amp-csr/shared';
+import type { ListUsersResponseDto, MobileUserDto, UpdateUserDto, UserDetailDto } from '@csr-portal/shared';
 import { userDetailDto, userDto } from '../test/fixtures.js';
 
 describe('UsersController', () => {

@@ -50,8 +50,8 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: npm run build -w @amp-csr/shared
-      - run: npm run build -w @amp-csr/web
+      - run: npm run build -w @csr-portal/shared
+      - run: npm run build -w @csr-portal/web
 
       - name: Deploy Worker (serves apps/web/dist + proxies /api)
         uses: cloudflare/wrangler-action@v3

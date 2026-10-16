@@ -1,4 +1,4 @@
-import { csrUserSchema, loginSchema, type CsrUserDto, type LoginDto } from '@amp-csr/shared';
+import { csrUserSchema, loginSchema, type CsrUserDto, type LoginDto } from '@csr-portal/shared';
 
 import { apiUrl } from './apiUrl.js';
 

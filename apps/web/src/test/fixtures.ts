@@ -7,7 +7,7 @@ import type {
   SubscriptionDto,
   UserDetailDto,
   VehicleDto,
-} from "@amp-csr/shared";
+} from "@csr-portal/shared";
 
 export const validUser: MobileUserDto = {
   id: 1,

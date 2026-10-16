@@ -1,4 +1,4 @@
-import type { VehicleDto } from '@amp-csr/shared';
+import type { VehicleDto } from '@csr-portal/shared';
 import type { Vehicle } from '../../generated/prisma/client.js';
 import { toSubscriptionDto, type SubscriptionWithPlan } from './subscription.mapper.js';
 

@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { createSubscription } from '../../api/subscriptions.js';
-import type { CreateSubscriptionDto } from '@amp-csr/shared';
+import type { CreateSubscriptionDto } from '@csr-portal/shared';
 
 export function useCreateSubscription() {
   const queryClient = useQueryClient();

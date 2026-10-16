@@ -1,4 +1,4 @@
-import type { PurchaseDto } from '@amp-csr/shared';
+import type { PurchaseDto } from '@csr-portal/shared';
 import type { Prisma } from '../../generated/prisma/client.js';
 
 export type PurchaseWithVehicle = Prisma.PurchaseGetPayload<{
