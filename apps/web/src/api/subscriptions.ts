@@ -1,4 +1,4 @@
-import type { CreateSubscriptionDto, TransferSubscriptionDto } from '@amp-csr/shared';
+import type { CreateSubscriptionDto, TransferSubscriptionDto } from '@csr-portal/shared';
 
 import { apiFetch } from './apiFetch.js';
 import { apiUrl } from './apiUrl.js';

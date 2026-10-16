@@ -8,7 +8,7 @@ import {
   type MobileUserDto,
   type UpdateUserDto,
   type UserDetailDto,
-} from '@amp-csr/shared';
+} from '@csr-portal/shared';
 import { ZodValidationPipe } from '../common/pipes/zod-validation.pipe.js';
 
 @Controller('users')

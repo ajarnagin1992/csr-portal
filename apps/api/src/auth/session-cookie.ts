@@ -1,5 +1,5 @@
 import type { CookieOptions, Request } from 'express';
-import type { CsrUserDto } from '@amp-csr/shared';
+import type { CsrUserDto } from '@csr-portal/shared';
 
 export const SESSION_COOKIE = 'csr_session';
 export const SESSION_TTL_MS = 8 * 60 * 60 * 1000;

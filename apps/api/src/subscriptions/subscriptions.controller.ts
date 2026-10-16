@@ -7,7 +7,7 @@ import {
   type SubscriptionDto,
   transferSubscriptionSchema,
   type TransferSubscriptionDto,
-} from '@amp-csr/shared';
+} from '@csr-portal/shared';
 
 @Controller('subscriptions')
 export class SubscriptionsController {

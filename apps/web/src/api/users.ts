@@ -8,7 +8,7 @@ import {
   type MobileUserDto,
   type UpdateUserDto,
   type UserDetailDto,
-} from '@amp-csr/shared';
+} from '@csr-portal/shared';
 
 import { apiFetch } from './apiFetch.js';
 import { apiUrl } from './apiUrl.js';

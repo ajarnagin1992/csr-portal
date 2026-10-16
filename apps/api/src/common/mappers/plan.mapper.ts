@@ -1,4 +1,4 @@
-import type { PlanDto } from '@amp-csr/shared';
+import type { PlanDto } from '@csr-portal/shared';
 import type { Plan } from '../../generated/prisma/client.js';
 
 export function toPlanDto(plan: Plan): PlanDto {

@@ -1,4 +1,4 @@
-import type { CsrUserDto } from '@amp-csr/shared';
+import type { CsrUserDto } from '@csr-portal/shared';
 import type { CsrUser } from '../../generated/prisma/client.js';
 
 export function toCsrUserDto(user: CsrUser): CsrUserDto {

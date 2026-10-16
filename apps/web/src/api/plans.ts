@@ -6,7 +6,7 @@ import {
   type GetPlansRequestDto,
   type PlanDto,
   type UpdatePlanDto,
-} from '@amp-csr/shared';
+} from '@csr-portal/shared';
 
 import { apiFetch } from './apiFetch.js';
 import { apiUrl } from './apiUrl.js';

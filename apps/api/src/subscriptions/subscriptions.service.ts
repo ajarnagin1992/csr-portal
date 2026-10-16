@@ -3,7 +3,7 @@ import { PrismaService } from '../prisma/prisma.service.js';
 import { Prisma } from '../generated/prisma/client.js';
 import { PRISMA_ERROR_CODE } from '../common/constants/prisma-error-codes.js';
 import { LIVE_STATUSES_SUBSCRIPTION, TERMINAL_STATUSES_SUBSCRIPTION } from '../common/constants/terminal-statuses.js';
-import type { SubscriptionDto } from '@amp-csr/shared';
+import type { SubscriptionDto } from '@csr-portal/shared';
 import { toSubscriptionDto } from '../common/mappers/subscription.mapper.js';
 
 @Injectable()

@@ -14,7 +14,7 @@ import {
   type PlanDto,
   type SubscriptionDto,
   type UserDetailDto,
-} from '@amp-csr/shared'
+} from '@csr-portal/shared'
 import { createSeed, type Store, type SubscriptionRecord } from './seed.js'
 
 const LIVE = new Set<SubscriptionRecord['status']>(['ACTIVE', 'OVERDUE'])
@@ -73,7 +73,7 @@ function parseWith<T>(schema: ZodType<T>, body: unknown): T {
  *
  * It enforces the same rules as the real services (one live subscription per vehicle, disabled
  * accounts are frozen, disabled plans can't be subscribed to, transfers stay within one customer)
- * and validates request bodies with the real Zod schemas from `@amp-csr/shared`. So the portal
+ * and validates request bodies with the real Zod schemas from `@csr-portal/shared`. So the portal
  * is exercised end to end (real bundle, real fetch calls, real cache invalidation) without a
  * database. Each test gets its own instance and therefore its own data.
  */

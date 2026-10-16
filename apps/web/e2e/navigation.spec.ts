@@ -5,7 +5,7 @@ test.describe('Navigation', () => {
   test('has a descriptive page title', async ({ page }) => {
     await page.goto('/')
 
-    await expect(page).toHaveTitle('AMP Customer Service Representative Portal')
+    await expect(page).toHaveTitle('Customer Service Representative Portal')
   })
 
   test('opens on the customers list', async ({ page }) => {

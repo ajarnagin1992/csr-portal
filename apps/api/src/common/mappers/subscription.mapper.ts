@@ -1,4 +1,4 @@
-import type { SubscriptionDto } from '@amp-csr/shared';
+import type { SubscriptionDto } from '@csr-portal/shared';
 import type { Prisma } from '../../generated/prisma/client.js';
 import { toPlanDto } from './plan.mapper.js';
 

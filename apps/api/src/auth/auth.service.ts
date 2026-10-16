@@ -1,6 +1,6 @@
 import { createHash, randomBytes } from 'node:crypto';
 import { HttpException, HttpStatus, Injectable, UnauthorizedException } from '@nestjs/common';
-import type { CsrUserDto } from '@amp-csr/shared';
+import type { CsrUserDto } from '@csr-portal/shared';
 import { PrismaService } from '../prisma/prisma.service.js';
 import { toCsrUserDto } from '../common/mappers/csr-user.mapper.js';
 import { LoginThrottle } from './login-throttle.js';

@@ -1,18 +1,19 @@
-# AMP CSR Portal
+# CSR Portal
 
-An internal portal for AMP customer service representatives to look up car wash
-members and resolve the calls they get: cancellations, billing questions,
-moving a subscription to a new vehicle, and accounts blocked by a failed payment.
+An internal portal for customer service representatives at a car wash
+membership business to look up members and resolve the calls they get:
+cancellations, billing questions, moving a subscription to a new vehicle, and
+accounts blocked by a failed payment.
 
 ## Live
 
 | Asset | URL |
 |---|---|
-| **Portal** | https://amp-csr-gateway.ajarnagin1992.workers.dev |
-| **API** | https://amp-csr-api.onrender.com (not for direct use: requests that don't come through the portal get `401`, see [Deployment](#deployment)) |
-| **Repo** | https://github.com/ajarnagin1992/amp-csr-portal |
+| **Portal** | https://csr-portal-gateway.ajarnagin1992.workers.dev |
+| **API** | https://csr-portal-api.onrender.com (not for direct use: requests that don't come through the portal get `401`, see [Deployment](#deployment)) |
+| **Repo** | https://github.com/ajarnagin1992/csr-portal |
 
-### Note for the assessor: Render cold starts
+### Note: Render cold starts
 
 The API is hosted on Render's free tier, which spins the service down after about
 15 minutes without traffic. **The first request after an idle period can take up
@@ -20,7 +21,7 @@ to a minute** while the API boots. Until it does, the portal will show a loading
 spinner (or an error, if the request times out), and reloading once the API is up
 resolves it. Requests after that are fast.
 
-This is a limitation of the free hosting tier I chose for this assessment, not of
+This is a limitation of the free hosting tier the demo runs on, not of
 the application: a paid Render instance (or any always-on host) doesn't sleep and
 wouldn't have this delay. If the portal looks stuck on first load, please give it a
 minute and refresh.
@@ -108,8 +109,8 @@ running API, and every test starts from the same seed data.
 
 ```bash
 npx playwright install chromium          # once, from apps/web
-npm run test:e2e -w @amp-csr/web         # headless
-npm run test:e2e:ui -w @amp-csr/web      # Playwright's interactive UI
+npm run test:e2e -w @csr-portal/web         # headless
+npm run test:e2e:ui -w @csr-portal/web      # Playwright's interactive UI
 ```
 
 It uses its own dev server on port 5199 (override with `E2E_PORT`), so it won't

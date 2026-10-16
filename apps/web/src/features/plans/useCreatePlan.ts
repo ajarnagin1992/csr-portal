@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { createPlan } from '../../api/plans.js';
-import type { CreatePlanDto } from '@amp-csr/shared';
+import type { CreatePlanDto } from '@csr-portal/shared';
 
 export function useCreatePlan() {
   const queryClient = useQueryClient();

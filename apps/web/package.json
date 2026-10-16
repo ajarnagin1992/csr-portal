@@ -1,5 +1,5 @@
 {
-  "name": "@amp-csr/web",
+  "name": "@csr-portal/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,12 +11,12 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:cov": "vitest run --coverage",
-    "pretest:e2e": "npm --prefix ../.. run build -w @amp-csr/shared",
+    "pretest:e2e": "npm --prefix ../.. run build -w @csr-portal/shared",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
-    "@amp-csr/shared": "*",
+    "@csr-portal/shared": "*",
     "@mantine/core": "^8.3.18",
     "@mantine/hooks": "^8.3.18",
     "@tanstack/react-query": "^5.103.1",

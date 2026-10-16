@@ -1,4 +1,4 @@
-import type { MobileUserDto, UserDetailDto } from '@amp-csr/shared';
+import type { MobileUserDto, UserDetailDto } from '@csr-portal/shared';
 import type { MobileUser } from '../../generated/prisma/client.js';
 import { toVehicleDto, type VehicleWithCurrentSubscription } from './vehicle.mapper.js';
 import { toPurchaseDto, type PurchaseWithVehicle } from './purchase.mapper.js';

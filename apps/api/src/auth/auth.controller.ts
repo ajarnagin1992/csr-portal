@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Header, HttpCode, Post, Req, Res } from '@nestjs/common';
 import type { Request, Response } from 'express';
-import { loginSchema, type CsrUserDto, type LoginDto } from '@amp-csr/shared';
+import { loginSchema, type CsrUserDto, type LoginDto } from '@csr-portal/shared';
 import { AllowAnonymous } from '../common/guards/allow-anonymous.decorator.js';
 import { ZodValidationPipe } from '../common/pipes/zod-validation.pipe.js';
 import { AuthService } from './auth.service.js';

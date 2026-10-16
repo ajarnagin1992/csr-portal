@@ -1,8 +1,8 @@
 {
-  "name": "amp-csr-portal",
+  "name": "csr-portal",
   "private": true,
   "version": "1.0.0",
-  "description": "CSR Portal for AMP car wash membership platform",
+  "description": "CSR Portal for a car wash membership platform",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -11,10 +11,10 @@
     "node": ">=24"
   },
   "scripts": {
-    "predev": "npm run build -w @amp-csr/shared",
-    "dev": "concurrently -n shared,api,web -c gray,red,cyan \"npm run dev -w @amp-csr/shared\" \"npm run start:dev -w @amp-csr/api\" \"npm run dev -w @amp-csr/web\"",
+    "predev": "npm run build -w @csr-portal/shared",
+    "dev": "concurrently -n shared,api,web -c gray,red,cyan \"npm run dev -w @csr-portal/shared\" \"npm run start:dev -w @csr-portal/api\" \"npm run dev -w @csr-portal/web\"",
     "build": "npm run build --workspaces --if-present",
-    "deploy:portal": "npm run build -w @amp-csr/shared && npm run build -w @amp-csr/web && npm run deploy -w @amp-csr/gateway",
+    "deploy:portal": "npm run build -w @csr-portal/shared && npm run build -w @csr-portal/web && npm run deploy -w @csr-portal/gateway",
     "test": "npm run test --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present"
